@@ -24,7 +24,7 @@ By completing these steps, you'll establish a solid foundation for your developm
 
 ### Installing VSCode
 
-Install **[VS Code](https://code.visualstudio.com/Download)**.
+Install [VS Code](https://code.visualstudio.com/Download)
 
 ### `code` command
 
@@ -62,9 +62,9 @@ Homebrew is a package manager for macOS (and Linux) that simplifies the process 
 
 Overall, Homebrew streamlines the process of managing software on macOS, making it easier for users to install, update, and maintain the tools they need for development and everyday use.
 
-### Install Homebrew
+### Installing Homebrew
 
-**[Homebrew](https://brew.sh/)**
+[Homebrew](https://brew.sh/)
 
 In the terminal run this command:
 
@@ -96,9 +96,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 Overall, `rbenv` simplifies the process of managing Ruby versions and environments, making it easier for developers to work on multiple projects with different Ruby requirements without conflicts.
 
-### Install rbenv
+### Installing rbenv
 
-**[rbenv github repo](https://github.com/rbenv/rbenv)**
+[rbenv github repo](https://github.com/rbenv/rbenv)
 
 In the terminal run this command:
 
@@ -203,7 +203,7 @@ rails -v
 
 ## Install PostgreSQL
 
-You can install **[PostgreSQL](http://www.postgresql.org/)** server and client from Homebrew:
+You can install [PostgreSQL](http://www.postgresql.org/) server and client from Homebrew:
 
 ```bash
 brew install postgresql
@@ -224,13 +224,13 @@ psql pttl-42
 
 ## GUI Install Alternatives
 
-**[Postgres.app](https://postgresapp.com/)**
+[Postgres.app](https://postgresapp.com/)
 
-**[Postico](https://eggerapps.at/postico/v1.php)**
+[Postico](https://eggerapps.at/postico/v1.php)
 
 ## Setup Version Control
 
-We'll be using Git for our version control system so we're going to set it up to match our **[Github](https://github.com/)** account. If you don't already have a Github account, make sure to **[register](https://github.com/)**. It will come in handy for the future.
+We'll be using Git for our version control system so we're going to set it up to match our [Github](https://github.com/) account. If you don't already have a Github account, make sure to [register](https://github.com/). It will come in handy for the future.
 
 Replace the example name and email address in the following steps with the ones you used for your Github account.
 
@@ -241,7 +241,7 @@ git config --global user.email "YOUR@EMAIL.com" #swap "YOUR@EMAIL.com" for the e
 ssh-keygen -t ed25519 -C "YOUR@EMAIL.com"
 ```
 
-The last command will create a ssh key that is unique to your machine. The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and **[paste it here](https://github.com/settings/ssh)**.
+The last command will create a ssh key that is unique to your machine. The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and [paste it here](https://github.com/settings/ssh).
 
 ```bash
 cat ~/.ssh/id_ed25519.pub
