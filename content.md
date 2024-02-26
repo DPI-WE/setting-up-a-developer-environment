@@ -79,7 +79,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ### What is rbenv
 
-`rbenv` is a tool used in Ruby development to manage different versions of the Ruby programming language on a single machine, making it easier for developers to work on multiple projects with different Ruby requirements without conflicts.
+`rbenv` is a tool used in Ruby development to manage different versions of the Ruby programming language on a single machine.
 
 ### Installing rbenv
 
