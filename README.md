@@ -1,1 +1,1 @@
-# setting-up-a-developer-environment
+# setting-up-a-development-environment

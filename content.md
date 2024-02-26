@@ -1,8 +1,8 @@
-# Setting up a Developer Environment
+# Setting up a Development Environment
 
 ## Introduction
 
-In this lesson, we'll walk through the process of setting up a local developer environment on macOS. A robust developer environment is essential for efficient and productive software development. By configuring your system properly, you'll have access to the tools and resources needed to write, test, and deploy code effectively.
+In this lesson, we'll walk through the process of setting up a local development environment on macOS. A robust development environment is essential for efficient and productive software development. By configuring your system properly, you'll have access to the tools and resources needed to write, test, and deploy code effectively.
 
 We'll cover the following key steps:
 
@@ -20,7 +20,7 @@ We'll cover the following key steps:
 
 By completing these steps, you'll establish a solid foundation for your development workflow, empowering you to build and maintain high-quality software projects effectively. Let's dive in!
 
-## Setting up your IDE (integrated developer environment)
+## Setting up your IDE (integrated development environment)
 
 ### Installing VSCode
 
@@ -52,15 +52,7 @@ code myfolder # open a specific folder
 
 ### What is Homebrew?
 
-Homebrew is a package manager for macOS (and Linux) that simplifies the process of installing, updating, and managing software packages and libraries. It's like an app store for your command line. Here's what it does:
-
-1. **Package Installation**: Homebrew allows users to easily install software packages and libraries from the command line. Instead of searching for installation files or downloading from websites manually, Homebrew handles everything for you.
-2. **Dependency Management**: Many software packages rely on other libraries or tools to function properly. Homebrew automatically manages these dependencies, ensuring that everything required for a package to work is installed correctly.
-3. **Updates**: Homebrew simplifies the process of keeping software up to date. Users can easily update all installed packages with a single command, ensuring that they have the latest features and security patches.
-4. **Version Control**: Homebrew allows users to install specific versions of software packages if needed. This can be useful for compatibility reasons or if a user prefers an older version for some reason.
-5. **Configuration Management**: Homebrew provides options for configuring how packages are installed and managed, giving users flexibility and control over their software environment.
-
-Overall, Homebrew streamlines the process of managing software on macOS, making it easier for users to install, update, and maintain the tools they need for development and everyday use.
+Homebrew is a package manager for macOS (and Linux) that simplifies the process of installing, updating, and managing software packages and libraries. It's like an app store for your command line.
 
 ### Installing Homebrew
 
@@ -87,14 +79,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ### What is rbenv
 
-`rbenv` is a tool used in Ruby development to manage different versions of the Ruby programming language on a single machine. Here's what it does:
-
-1. **Version Management**: `rbenv` allows developers to install and switch between multiple versions of Ruby on their system. This is particularly useful when working on projects that require different versions of Ruby due to compatibility or dependency reasons.
-2. **Isolation**: `rbenv` provides a way to isolate different Ruby environments for different projects. Each project can have its own Ruby version specified, ensuring that dependencies and configurations do not conflict between projects.
-3. **Integration with Shell**: `rbenv` integrates with the shell environment, allowing users to set a specific Ruby version globally or per project using simple commands. This ensures that the correct Ruby version is used when running Ruby scripts or applications.
-4. **Plugin System**: `rbenv` has a plugin system that extends its functionality. Users can install plugins to add features such as automatic switching of Ruby versions based on the directory or environment variables.
-
-Overall, `rbenv` simplifies the process of managing Ruby versions and environments, making it easier for developers to work on multiple projects with different Ruby requirements without conflicts.
+`rbenv` is a tool used in Ruby development to manage different versions of the Ruby programming language on a single machine, making it easier for developers to work on multiple projects with different Ruby requirements without conflicts.
 
 ### Installing rbenv
 
@@ -127,7 +112,6 @@ Close your terminal and launch a new one for changes to take effect
 
 ### Choose a version of Ruby to install
 
-<aside>
 Download whichever version of Ruby is required for your project.
 
 To find out which version of Ruby is required for a project, you can typically check one of the following places:
@@ -141,8 +125,6 @@ To find out which version of Ruby is required for a project, you can typically c
 4. **Documentation or project configuration**: Occasionally, the required Ruby version may be documented within the project's documentation or configuration files.
 
 By checking one or more of these sources, you should be able to determine the specific version of Ruby required for your project.
-
-</aside>
 
 ```bash
 # install a Ruby version:
@@ -235,17 +217,17 @@ We'll be using Git for our version control system so we're going to set it up to
 Replace the example name and email address in the following steps with the ones you used for your Github account.
 
 ```bash
-git config --global color.ui true
-git config --global user.name "YOUR NAME" # swap "YOUR NAME" for your Github username
+git config --global color.ui true # is used to enable colorized output in Git
+git config --global user.name "YOUR_USERNAME" # swap "YOUR USERNAME" for your Github username
 git config --global user.email "YOUR@EMAIL.com" #swap "YOUR@EMAIL.com" for the email associated with your Github account
 ssh-keygen -t ed25519 -C "YOUR@EMAIL.com"
 ```
 
-The last command will create a ssh key that is unique to your machine. The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and [paste it here](https://github.com/settings/ssh).
-
 ```bash
 cat ~/.ssh/id_ed25519.pub
 ```
+
+The last command will create a ssh key that is unique to your machine. The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and [paste it here](https://github.com/settings/ssh).
 
 Once you've done this, you can check and see if it worked:
 
@@ -261,18 +243,4 @@ Hi {github username}! You've successfully authenticated, but GitHub does not pro
 
 ## Conclusion
 
-In this lesson, we've covered the essential steps to set up a local developer environment on macOS:
-
-1. **IDE Installation**: We installed Visual Studio Code (VSCode) and configured the `code` command in the PATH to open VSCode from the terminal conveniently.
-
-2. **Package Manager Setup**: We installed Homebrew, a package manager for macOS, to simplify the process of installing, updating, and managing software packages and libraries.
-
-3. **Ruby Version Manager (rbenv)**: We set up rbenv, a lightweight Ruby version management tool, to manage different versions of Ruby on our machine, making it easy to work on projects with different Ruby requirements.
-
-4. **Rails Installation**: We installed Ruby on Rails using the `gem install rails` command, allowing us to start developing Rails applications.
-
-5. **Database Installation (PostgreSQL)**: We installed PostgreSQL using Homebrew and set it up to run as a service on our machine.
-
-6. **Version Control (Git)**: We configured Git and set up SSH keys to authenticate with GitHub, enabling us to use Git for version control and collaborate on projects.
-
-By following these steps, you now have a fully functional local development environment ready to start building and testing your projects. As a next step, you can begin working on your projects, explore additional tools and libraries, and continue learning and improving your development skills. Happy coding!
+In this lesson, we've covered the essential steps to set up a local development environment on macOS. You now have a fully functional environment ready to start building and testing your projects. It's important to note that this setup is tailored for DPI's Software Development Foundations course. Your IDE might vary depending on the technical stack and project requirements, so always consult the project README for specific instructions.
