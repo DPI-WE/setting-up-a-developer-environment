@@ -34,13 +34,15 @@ When you install VSCode, it typically offers the option to add itself to the sys
 
 To install the `code` command, type Cmd+Shift+P and start typing `install code` and select "Install 'code' command in PATH". This will add the `code` command to your shell so you can open up VS Code from your terminal.
 
-![CODE path screenshot](./assets/code_path.png)
+![CODE path screenshot](assets/code_path.png)
 
-<aside>The PATH is an environment variable in operating systems like Unix, Linux, and macOS, as well as in Windows. It specifies a set of directories where executable programs are located. When you type a command in the command line interface (CLI), the operating system searches through these directories specified in the PATH variable to find the executable corresponding to that command.
+<aside>
+The PATH is an environment variable in operating systems like Unix, Linux, and macOS, as well as in Windows. It specifies a set of directories where executable programs are located. When you type a command in the command line interface (CLI), the operating system searches through these directories specified in the PATH variable to find the executable corresponding to that command.
 
 For example, if you type `ls` in the terminal, the operating system will search through the directories listed in the PATH variable to find the `ls` executable, which is typically located in `/bin` or `/usr/bin`.
 
-The PATH variable helps the operating system locate executable files, making it easier to run commands from the command line without having to specify the full path to the executable every time.</aside>
+The PATH variable helps the operating system locate executable files, making it easier to run commands from the command line without having to specify the full path to the executable every time.
+</aside>
 
 ```bash
 # Examples
