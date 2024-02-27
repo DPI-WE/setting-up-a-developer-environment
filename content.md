@@ -244,3 +244,6 @@ Hi {github username}! You've successfully authenticated, but GitHub does not pro
 ## Conclusion
 
 In this lesson, we've covered the essential steps to set up a local development environment on macOS. You now have a fully functional environment ready to start building and testing your projects. It's important to note that this setup is tailored for DPI's Software Development Foundations course. Your IDE might vary depending on the technical stack and project requirements, so always consult the project README for specific instructions.
+
+## Resources
+- [Go Rails Setup Guide](https://gorails.com/setup/)
