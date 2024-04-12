@@ -243,6 +243,32 @@ You should get a message like this:
 Hi {github username}! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+## Helpful extensions for VS Code
+
+#### [Simple Ruby ERB](https://marketplace.visualstudio.com/items?itemName=vortizhe.simple-ruby-erb)
+
+Provides simple Ruby and ERB language, code snippets and ERB tag helper support for Visual Studio Code without messing with linting or debugging
+
+#### [Rufo](https://marketplace.visualstudio.com/items?itemName=mbessey.vscode-rufo)
+
+VS Code extension for formatting ruby files using the rufo gem
+
+#### [ERB Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=aliariff.vscode-erb-beautify)
+
+A normaliser/beautifier for HTML that also understands embedded Ruby. Ideal for tidying up Rails templates
+
+#### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+
+#### [ERB Commenter](https://marketplace.visualstudio.com/items?itemName=setobiralo.erb-commenter)
+
+This is a simple VS Code extension that allows you to comment out your ERB files using the shortcut `ctrl + /.`
+
+#### [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp)
+
+The Ruby LSP is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
+
 ## Conclusion
 
 In this lesson, we've covered the essential steps to set up a local development environment on macOS. You now have a fully functional environment ready to start building and testing your projects. It's important to note that this setup is tailored for DPI's Software Development Foundations course. Your IDE might vary depending on the technical stack and project requirements, so always consult the project README for specific instructions.
