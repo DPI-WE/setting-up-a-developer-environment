@@ -42,6 +42,7 @@ The PATH is an environment variable in operating systems like Unix, Linux, and m
 For example, if you type `ls` in the terminal, the operating system will search through the directories listed in the PATH variable to find the `ls` executable, which is typically located in `/bin` or `/usr/bin`.
 
 The PATH variable helps the operating system locate executable files, making it easier to run commands from the command line without having to specify the full path to the executable every time.
+
 </aside>
 
 ```bash
@@ -49,6 +50,63 @@ The PATH variable helps the operating system locate executable files, making it 
 code myfile.txt # open a specific file
 code myfolder # open a specific folder
 ```
+
+### Setting up a workspace
+
+It's a best practice to keep 1 workspace folder for all of your code. Let's set that up now.
+
+1. Open a terminal on your computer. Enter ⌘+spacebar to open spotlight and type in terminal.
+   ![Spotlight screenshot](assets/spotlight.jpeg)
+
+![terminal screenshot](assets/terminal.png)
+
+2. Enter `pwd` command to print the working directory. It should look something like this.
+
+```bash
+% pwd
+
+/Users/ianheraty
+```
+
+3. Enter `mkdir Workspace` command to make a `Workspace` directory.
+
+```bash
+% pwd
+
+/Users/ianheraty
+
+% mkdir Workspace
+```
+
+4. Enter `ls` command to list the contents of your directory and verify you have created the Workspace directory.
+
+```bash
+% ls
+
+Applications Downloads Music Workspace
+
+Desktop Library Pictures tmp
+
+Documents Movies Public
+
+```
+
+5. Enter `open .` command to open the current directory in finder.
+
+```bash
+% open .
+```
+
+6. Drag `Workspace` folder to your favorites for easy access.
+   ![folder view](assets/folder.png)
+
+### Scratch folder
+
+Now that we have a `Workspace` folder, lets add a `scratch` folder inside of it.
+
+This is a place to experiment and create one off scripts and files.
+![scratch folder](assets/scratch.png)
+![vscode image](assets/vscode.png)
 
 ## Setup a Package Manager
 
@@ -269,9 +327,60 @@ This is a simple VS Code extension that allows you to comment out your ERB files
 
 The Ruby LSP is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
 
+## Quiz
+
+- What is the purpose of the `rbenv` tool in Ruby development?
+
+  - It is used to manage different versions of the Ruby programming language on a single machine.
+    - Correct!
+  - It is used to install Ruby on Rails.
+    - Not correct. `rbenv` is a version manager for Ruby, not a Rails installer.
+  - It is a package manager for macOS.
+    - Not correct. `rbenv` is a version manager for Ruby, not a package manager for macOS.
+  - It is a version control system.
+    - Not correct. `rbenv` is a version manager for Ruby, not a version control system.
+      {: .choose_best #rbenv title="What is the Purpose of rbenv" points="1" answer="1"}
+
+- How can you verify that Rails has been installed successfully?
+
+  - Run `brew install rails`
+    - Not correct. This command is used to install Rails via Homebrew, not to verify its installation.
+  - Run `gem install rails`
+    - Not correct. This command is used to install Rails via RubyGems, not to verify its installation.
+  - Run `rails -v`
+    - Correct!
+  - Run `rbenv init`
+    - Not correct. This command is used to initialize `rbenv`, not to verify Rails installation.
+      {: .choose_best #rails title="How Can You Verify Rails Install?" points="1" answer="3"}
+
+- Which command is used to set the default Ruby version for the machine?
+
+  - `rbenv install 3.2.1`
+    - Not correct. This command is used to install a specific Ruby version via `rbenv`, not to set the default Ruby version.
+  - `rbenv local 3.2.1`
+    - Not correct. This command is used to set the local Ruby version for a specific project, not to set the default Ruby version.
+  - `rbenv global 3.2.1`
+    - Correct!
+  - `ruby -v`
+    - Not correct. This command is used to check the current Ruby version, not to set the default Ruby version.
+      {: .choose_best #default-ruby title="Command for default Ruby on sysytem?" points="1" answer="3"}
+
+- What is the Ruby LSP extension used for?
+
+  - To provide performant rich features for Python
+    - Not correct. The Ruby LSP extension is for Ruby, not Python.
+  - To install Ruby on Rails
+    - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for installing Rails.
+  - To set up PostgreSQL
+    - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for setting up PostgreSQL.
+  - To provide performant rich features for Ruby
+    - Correct!
+      {: .choose_best #ruby-lsp title="What Is Ruby LSP For?" points="1" answer="4"}
+
 ## Conclusion
 
 In this lesson, we've covered the essential steps to set up a local development environment on macOS. You now have a fully functional environment ready to start building and testing your projects. It's important to note that this setup is tailored for DPI's Software Development Foundations course. Your IDE might vary depending on the technical stack and project requirements, so always consult the project README for specific instructions.
 
 ## Resources
+
 - [Go Rails Setup Guide](https://gorails.com/setup/)
