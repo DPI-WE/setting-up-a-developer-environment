@@ -330,52 +330,90 @@ The Ruby LSP is an extension that provides performant rich features for Ruby. It
 ## Quiz
 
 - What is the purpose of the `rbenv` tool in Ruby development?
-
-  - It is used to manage different versions of the Ruby programming language on a single machine.
-    - Correct!
-  - It is used to install Ruby on Rails.
-    - Not correct. `rbenv` is a version manager for Ruby, not a Rails installer.
-  - It is a package manager for macOS.
-    - Not correct. `rbenv` is a version manager for Ruby, not a package manager for macOS.
-  - It is a version control system.
-    - Not correct. `rbenv` is a version manager for Ruby, not a version control system.
-      {: .choose_best #rbenv title="What is the Purpose of rbenv" points="1" answer="1"}
+- It is used to manage different versions of the Ruby programming language on a single machine.
+  - Correct!
+- It is used to install Ruby on Rails.
+  - Not correct. `rbenv` is a version manager for Ruby, not a Rails installer.
+- It is a package manager for macOS.
+  - Not correct. `rbenv` is a version manager for Ruby, not a package manager for macOS.
+- It is a version control system.
+  - Not correct. `rbenv` is a version manager for Ruby, not a version control system.
+{: .choose_best #rbenv title="What is the Purpose of rbenv" points="1" answer="1"}
 
 - How can you verify that Rails has been installed successfully?
-
-  - Run `brew install rails`
-    - Not correct. This command is used to install Rails via Homebrew, not to verify its installation.
-  - Run `gem install rails`
-    - Not correct. This command is used to install Rails via RubyGems, not to verify its installation.
-  - Run `rails -v`
-    - Correct!
-  - Run `rbenv init`
-    - Not correct. This command is used to initialize `rbenv`, not to verify Rails installation.
-      {: .choose_best #rails title="How Can You Verify Rails Install?" points="1" answer="3"}
+- Run `brew install rails`
+  - Not correct. This command is used to install Rails via Homebrew, not to verify its installation.
+- Run `gem install rails`
+  - Not correct. This command is used to install Rails via RubyGems, not to verify its installation.
+- Run `rails -v`
+  - Correct!
+- Run `rbenv init`
+  - Not correct. This command is used to initialize `rbenv`, not to verify Rails installation.
+{: .choose_best #rails title="How Can You Verify Rails Install?" points="1" answer="3"}
 
 - Which command is used to set the default Ruby version for the machine?
-
-  - `rbenv install 3.2.1`
-    - Not correct. This command is used to install a specific Ruby version via `rbenv`, not to set the default Ruby version.
-  - `rbenv local 3.2.1`
-    - Not correct. This command is used to set the local Ruby version for a specific project, not to set the default Ruby version.
-  - `rbenv global 3.2.1`
-    - Correct!
-  - `ruby -v`
-    - Not correct. This command is used to check the current Ruby version, not to set the default Ruby version.
-      {: .choose_best #default-ruby title="Command for default Ruby on sysytem?" points="1" answer="3"}
+- `rbenv install 3.2.1`
+  - Not correct. This command is used to install a specific Ruby version via `rbenv`, not to set the default Ruby version.
+- `rbenv local 3.2.1`
+  - Not correct. This command is used to set the local Ruby version for a specific project, not to set the default Ruby version.
+- `rbenv global 3.2.1`
+  - Correct!
+- `ruby -v`
+  - Not correct. This command is used to check the current Ruby version, not to set the default Ruby version.
+{: .choose_best #default-ruby title="Command for Default Ruby on System?" points="1" answer="3"}
 
 - What is the Ruby LSP extension used for?
+- To provide performant rich features for Python
+  - Not correct. The Ruby LSP extension is for Ruby, not Python.
+- To install Ruby on Rails
+  - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for installing Rails.
+- To set up PostgreSQL
+  - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for setting up PostgreSQL.
+- To provide performant rich features for Ruby such as hover information, code suggestions and definitions.
+  - Correct!
+{: .choose_best #ruby-lsp title="What Is Ruby LSP For?" points="1" answer="4"}
 
-  - To provide performant rich features for Python
-    - Not correct. The Ruby LSP extension is for Ruby, not Python.
-  - To install Ruby on Rails
-    - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for installing Rails.
-  - To set up PostgreSQL
-    - Not correct. The Ruby LSP extension is for enhancing Ruby development, not for setting up PostgreSQL.
-  - To provide performant rich features for Ruby
-    - Correct!
-      {: .choose_best #ruby-lsp title="What Is Ruby LSP For?" points="1" answer="4"}
+- Did you install VSCode on your machine?
+- Yes
+  - Great!
+- No
+  - Please install VSCode locally.
+{: .choose_best #vscode title="Did You Install VSCode?" points="1" answer="1"}
+
+- Have you setup a Workspace folder for your projects?
+- Yes
+  - Great!
+- No
+  - Please setup your Workspace folder.
+{: .choose_best #workspace title="Did You Setup Your Workspace Folder?" points="1" answer="1"}
+
+- Have you installed rbenv for managing Ruby?
+- Yes
+  - Great!
+- No
+  - Please install rbenv to manage Ruby versions.
+{: .choose_best #rbenv-install title="Did You Install rbenv?" points="1" answer="1"}
+
+- Have you installed Rails on your machine?
+- Yes
+  - Great!
+- No
+  - Please install Rails locally.
+{: .choose_best #rails-install title="Did You Install Rails Locally?" points="1" answer="1"}
+
+- Have you installed Postgres on your machine?
+- Yes
+  - Great!
+- No
+  - Please install Postgres locally.
+{: .choose_best #postgres-install title="Did You Install Postgres Locally?" points="1" answer="1"}
+
+- Have you configured Git and set up SSH keys ?
+- Yes
+  - Great!
+- No
+  - Please configure Git and set up your SSH keys.
+{: .choose_best #configure-git title="Did You Configure Git and SSH Keys?" points="1" answer="1"}
 
 ## Conclusion
 
