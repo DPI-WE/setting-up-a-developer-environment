@@ -6,6 +6,8 @@ In this lesson, we'll walk through the process of setting up a local development
 
 We'll cover the following key steps:
 
+0. **(Windows 10 and up) OS install**: If you want to use a Windows operating system then currently the easist option is to install an Linux distro into your alongside your Windows OS.
+
 1. **IDE Installation**: We'll install Visual Studio Code (VSCode), a popular and versatile code editor, and configure it for seamless integration with our terminal.
 
 2. **Package Manager Setup**: We'll set up Homebrew, a powerful package manager for macOS, to simplify the installation and management of software packages and libraries.
@@ -19,6 +21,16 @@ We'll cover the following key steps:
 6. **Version Control (Git)**: We'll configure Git and set up SSH keys to authenticate with GitHub, enabling us to use version control for our projects and collaborate with other developers.
 
 By completing these steps, you'll establish a solid foundation for your development workflow, empowering you to build and maintain high-quality software projects effectively. Let's dive in!
+
+## (Windows Only) Installing a Linux operating system with Windows
+
+Open Windows powershell and run the command below (This will require a restart when its completed).
+
+```powershell
+wsl --install -d Ubuntu # Ubuntu will is the Distro is the option I chose but others could be used instead (your process made vary if chosen another distro)
+```
+
+On restart you will have to use the Ubuntu App which could be found from the start menu as a recently added you will have to make an profile name and password upon launching the Linux os for the first time. Whenever the terminal is being used in this guide stick to the Ubuntu app for console commands or check below for VSCode extension (WSL) intended for Windows users only.
 
 ## Setting up your IDE (integrated development environment)
 
@@ -132,6 +144,11 @@ After the initial install you will be instructed to run 2 commands in your termi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
+### (Windows Version)
+bash The files you will access will not be .zprofile and instead .bashrc as seen below for clarification
+```bash
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/ProfileNameHere/.bashrc
+```
 
 ## Setup a Ruby Version Manager
 
@@ -166,6 +183,27 @@ code ~/.zshrc
 
 #Paste this code in your file, save the file and close it
 eval "$(rbenv init - zsh)"
+```
+
+### (Windows Only)
+
+You will have more success downloading the whole repo instead of doing it through homebrew
+
+```bash
+# Clone the repo into your system
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+#This will initialize the rbenv 
+~/.rbenv/bin/rbenv init
+
+#below will be if the extra steps if above didn't work
+
+# Open ~/.bashrc in VSCode by typing this into the terminal
+code ~/.bashrc
+
+#Paste these lines of code in your file, save the file and close it
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 ```
 
 Close your terminal and launch a new one for changes to take effect
@@ -326,6 +364,10 @@ This is a simple VS Code extension that allows you to comment out your ERB files
 #### [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp)
 
 The Ruby LSP is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
+
+#### [WSL (Windows only)](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+
+The WSL extension lets you use VS Code on Windows to build Linux applications that run on the Windows Subsystem for Linux (WSL). You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities instead of doing everything off the Distro.
 
 ## Quiz
 
