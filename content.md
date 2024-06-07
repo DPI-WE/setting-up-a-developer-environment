@@ -24,6 +24,11 @@ By completing these steps, you'll establish a solid foundation for your developm
 
 ## (Windows Only) Installing a Linux operating system with Windows
 
+### Check if you have wsl enable
+1. Press the Start key on the keyboard to open the Start menu.
+2. Type “Turn Windows Features on or off” and press Enter.
+3. Find “Windows Subsystem for Linux” and check if it's enabled. If not click the box beside it and then ok to have it enabled (this will require a restart once the process is done)
+
 Open Windows powershell and run the command below (This will require a restart when its completed).
 
 ```powershell
@@ -31,6 +36,14 @@ wsl --install -d Ubuntu # Ubuntu will is the Distro is the option I chose but ot
 ```
 
 On restart you will have to use the Ubuntu App which could be found from the start menu as a recently added you will have to make an profile name and password upon launching the Linux os for the first time. Whenever the terminal is being used in this guide stick to the Ubuntu app for console commands or check below for VSCode extension (WSL) intended for Windows users only.
+
+### Warning
+
+If you want to end your session developing with Linux and ruby then in Powershell run this command to shutdown the virtual machine (you can check if your virtual machine is still running by seeing if vmmem is visible within task manager):
+
+```powershell
+wsl --shutdown
+```
 
 ## Setting up your IDE (integrated development environment)
 
