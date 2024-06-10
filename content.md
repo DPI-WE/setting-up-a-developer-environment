@@ -55,12 +55,12 @@ code myfolder # open a specific folder
 
 It's a best practice to keep 1 workspace folder for all of your code. Let's set that up now.
 
-1. Open a terminal on your computer. Enter ⌘+spacebar to open spotlight and type in terminal.
+#### 1. Open a terminal on your computer. Enter ⌘+spacebar to open spotlight and type in terminal.
    ![Spotlight screenshot](assets/spotlight.jpeg)
 
 ![terminal screenshot](assets/terminal.png)
 
-2. Enter `pwd` command to print the working directory. It should look something like this.
+#### 2. Enter `pwd` command to print the working directory. It should look something like this.
 
 ```bash
 % pwd
@@ -68,7 +68,7 @@ It's a best practice to keep 1 workspace folder for all of your code. Let's set 
 /Users/ianheraty
 ```
 
-3. Enter `mkdir Workspace` command to make a `Workspace` directory.
+#### 3. Enter `mkdir Workspace` command to make a `Workspace` directory.
 
 ```bash
 % pwd
@@ -78,7 +78,7 @@ It's a best practice to keep 1 workspace folder for all of your code. Let's set 
 % mkdir Workspace
 ```
 
-4. Enter `ls` command to list the contents of your directory and verify you have created the Workspace directory.
+#### 4. Enter `ls` command to list the contents of your directory and verify you have created the Workspace directory.
 
 ```bash
 % ls
@@ -91,13 +91,13 @@ Documents Movies Public
 
 ```
 
-5. Enter `open .` command to open the current directory in finder.
+#### 5. Enter `open .` command to open the current directory in finder.
 
 ```bash
 % open .
 ```
 
-6. Drag `Workspace` folder to your favorites for easy access.
+#### 6. Drag `Workspace` folder to your favorites for easy access.
    ![folder view](assets/folder.png)
 
 ### Scratch folder
@@ -303,29 +303,29 @@ Hi {github username}! You've successfully authenticated, but GitHub does not pro
 
 ## Helpful extensions for VS Code
 
-#### [Simple Ruby ERB](https://marketplace.visualstudio.com/items?itemName=vortizhe.simple-ruby-erb)
+#### Simple Ruby ERB
 
-Provides simple Ruby and ERB language, code snippets and ERB tag helper support for Visual Studio Code without messing with linting or debugging
+[Simple Ruby ERB](https://marketplace.visualstudio.com/items?itemName=vortizhe.simple-ruby-erb) provides simple Ruby and ERB language, code snippets and ERB tag helper support for Visual Studio Code without messing with linting or debugging
 
-#### [Rufo](https://marketplace.visualstudio.com/items?itemName=mbessey.vscode-rufo)
+#### Rufo
 
-VS Code extension for formatting ruby files using the rufo gem
+[Rufo](https://marketplace.visualstudio.com/items?itemName=mbessey.vscode-rufo) is a VS Code extension for formatting ruby files using the rufo gem
 
-#### [ERB Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=aliariff.vscode-erb-beautify)
+#### ERB Formatter/Beautify
 
-A normaliser/beautifier for HTML that also understands embedded Ruby. Ideal for tidying up Rails templates
+[ERB Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=aliariff.vscode-erb-beautify) is a normaliser/beautifier for HTML that also understands embedded Ruby. Ideal for tidying up Rails templates
 
-#### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+#### GitLens
 
-Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) supercharges Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
 
-#### [ERB Commenter](https://marketplace.visualstudio.com/items?itemName=setobiralo.erb-commenter)
+#### ERB Commenter
 
-This is a simple VS Code extension that allows you to comment out your ERB files using the shortcut `ctrl + /.`
+[ERB Commenter](https://marketplace.visualstudio.com/items?itemName=setobiralo.erb-commenter) is a simple VS Code extension that allows you to comment out your ERB files using the shortcut `ctrl + /.`
 
-#### [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp)
+#### Ruby LSP
 
-The Ruby LSP is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
+The [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
 
 ## Quiz
 
