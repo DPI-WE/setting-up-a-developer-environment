@@ -327,6 +327,34 @@ Hi {github username}! You've successfully authenticated, but GitHub does not pro
 
 The [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) is an extension that provides performant rich features for Ruby. It connects to the ruby-lsp language server gem to analyze Ruby code and enhance the user experience
 
+## Customizing your terminal
+
+Customizing your terminal on macOS is beneficial for software developers as it enhances productivity and efficiency. Personalizing the setup with shortcuts, aliases, and themes streamlines workflow and reduces repetitive tasks. Tools like Oh My Zsh provide useful information at a glance, such as git status or system metrics, optimizing the development process. Tailoring the terminal to fit specific needs creates a more intuitive and powerful workspace, leading to better code quality and faster project completion.
+
+#### Alternate terminal - iTerm2
+
+[iTerm2](https://iterm2.com/) is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.14 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
+
+#### Terminal customization - Oh My Zsh
+
+[Oh My Zsh](https://ohmyz.sh/) is a delightful, open source, community-driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins and themes.
+
+#### Zsh Theme - Powerlevel10k
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
+
+#### Oh My Zsh Plugins
+[3rd Party Plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) suggests commands as you type based on history and completions.
+- [zsh-history-substring-search](https://github.com/zsh-users/) is a clean-room implementation of the Fish shell's history search feature, where you can type in any part of any command from history and then press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
+
+#### Additional Resources
+
+[How To Make Your Boring Mac Terminal So Much Better](https://www.youtube.com/watch?v=CF1tMjvHDRA) - _YouTube Tutorial_
+
+
 ## Quiz
 
 - What is the purpose of the `rbenv` tool in Ruby development?
