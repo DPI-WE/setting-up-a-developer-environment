@@ -26,6 +26,8 @@ By completing these steps, you'll establish a solid foundation for your developm
 
 Install [VS Code](https://code.visualstudio.com/Download)
 
+Windows users: it's generally recommended to use VSCode within the Windows Subsystem for Linux - specifically WSL2. [Here is a comprehensive guide for installing WSL and using it in VSCode.](https://code.visualstudio.com/docs/remote/wsl)
+
 ### `code` command
 
 In the context of Visual Studio Code (VSCode), the `code` command in the `PATH` refers to a command-line interface tool provided by VSCode that allows you to open files and folders directly from the command line.
@@ -166,6 +168,11 @@ code ~/.zshrc
 
 #Paste this code in your file, save the file and close it
 eval "$(rbenv init - zsh)"
+```
+
+If you aren't using Homebrew, you can simply run this command to use [rbenv-installer](https://github.com/rbenv/rbenv-installer#rbenv-installer):
+```
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 ```
 
 Close your terminal and launch a new one for changes to take effect
